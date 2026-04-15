@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "w2a"
+version = "0.1.0"
+description = "Web2Agent Protocol SDK — discover and interact with W2A-enabled websites"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "W2A Protocol", email = "hello@w2a-protocol.org" }]
+keywords = ["ai", "agents", "w2a", "web2agent", "protocol", "llm", "mcp", "a2a"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+async = ["aiohttp>=3.9"]
+sync = ["requests>=2.31"]
+all = ["aiohttp>=3.9", "requests>=2.31"]
+
+[project.urls]
+Homepage = "https://w2a-protocol.org"
+Repository = "https://github.com/Nijjwol23/w2a"
+Documentation = "https://w2a-protocol.org/docs"
+"Bug Tracker" = "https://github.com/Nijjwol23/w2a/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["w2a*"]

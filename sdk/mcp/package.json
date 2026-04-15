@@ -1,0 +1,35 @@
+{
+  "name": "w2a-mcp",
+  "version": "0.1.0",
+  "description": "W2A MCP Server — expose any W2A-enabled site as MCP tools for Claude, Cursor, and other MCP clients",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "w2a-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "w2a",
+    "web2agent",
+    "ai-agents",
+    "claude",
+    "cursor",
+    "model-context-protocol"
+  ],
+  "author": "W2A Protocol",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nijjwol23/w2a"
+  },
+  "homepage": "https://w2a-protocol.org",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
