@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langchain-w2a"
+version = "0.2.0"
+description = "LangChain integration for the Web2Agent Protocol — turn any W2A-enabled website into LangChain tools"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "W2A Protocol", email = "hello@w2a-protocol.org" }]
+keywords = ["langchain", "w2a", "web2agent", "ai-agents", "tools", "mcp", "a2a"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "langchain-core>=0.2",
+    "w2a>=0.1.0",
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+    "langchain-tests>=0.3.0",
+    "langchain>=0.2",
+]
+
+[project.urls]
+Homepage = "https://w2a-protocol.org"
+Repository = "https://github.com/Nijjwol23/w2a"
+Documentation = "https://w2a-protocol.org/docs"
+"Bug Tracker" = "https://github.com/Nijjwol23/w2a/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["langchain_w2a*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
