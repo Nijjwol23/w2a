@@ -1,6 +1,6 @@
 # W2A Governance
 
-W2A is maintained by [The Order AI](https://theorder.ai) and open to
+W2A is maintained by Nijjwol Lamsal and open to
 contributions from the community. The goal is a protocol no single
 company controls — the same model as A2A under the Linux Foundation.
 
